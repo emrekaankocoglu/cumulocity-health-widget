@@ -1,7 +1,6 @@
 # Cumulocity IoT Health Microservice Widget
 This is a widget for health microservice (https://github.com/emrekaankocoglu/cumulocity-health-microservice) built with SAG Cumulocity IoT Runtime Widget Template. It does a fetch request to get the device health in its deployed context from the microservice.
 ![Picture](./ss.png)
->>>>>>> 8c41408c317dda41b6e31be1f2322e9b5a30140e
 
 ##  Building a Widget
 1. Clone this repo: 
