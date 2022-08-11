@@ -1,4 +1,4 @@
-# Cumulocity IoT Runtime Widget Template
+# Cumulocity IoT Health Microservice Widget
 This Template for runtime widget development and can be used to deploy runtime widget in application builder (written by Software AG Global Presales)
 
 ##  Building a Widget
