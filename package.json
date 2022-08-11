@@ -1,19 +1,18 @@
 {
-  "name": "cumulocity-runtime-widget",
+  "name": "device-health-widget",
   "interleave": {
-    "dist\\bundle-src\\custom-widget.js": "cumulocity-runtime-widget-CustomWidget",
-    "dist/bundle-src/custom-widget.js": "cumulocity-runtime-widget-CustomWidget"
+    "dist\\bundle-src\\custom-widget.js": "device-health-widget-CustomWidget",
+    "dist/bundle-src/custom-widget.js": "device-health-widget-CustomWidget"
   },
   "version": "0.0.0-development",
-  "description": "Template widget for runtime loading in Cumulocity using the cumulocity-runtime-widget-loader (written by Software AG Global Presales)",
+  "description": "Device health widget for health microservice-emrekaankocoglu",
   "scripts": {
     "build": "gulp"
   },
   "keywords": [],
-  "author": "Richard Peach - Software AG, Global Presales",
+  "author": "Emre Kaan Kocoglu",
   "license": "Apache 2.0",
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
     "@angular/common": "8.2.13",
     "@angular/core": "8.2.13",

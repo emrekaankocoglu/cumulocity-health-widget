@@ -1,6 +1,6 @@
 import {CoreModule, HOOK_COMPONENTS} from "@c8y/ngx-components";
-import {WidgetConfigDemo} from "./demo-widget-config.component";
-import {WidgetDemo} from "./demo-widget.component";
+import {WidgetConfigHealth} from "./health-widget-config.component";
+import {WidgetHealth} from "./health-widget.component";
 import {NgModule} from "@angular/core";
 
 // This will import css from the styles folder (Note: will be applied globally, not scoped to the module/components)
@@ -13,19 +13,19 @@ import '~styles/index.css';
     imports: [
         CoreModule
     ],
-    declarations: [WidgetDemo, WidgetConfigDemo],
-    entryComponents: [WidgetDemo, WidgetConfigDemo],
+    declarations: [WidgetHealth, WidgetConfigHealth],
+    entryComponents: [WidgetHealth, WidgetConfigHealth],
     providers: [
         // Connect the widget to Cumulocity via the HOOK_COMPONENT injection token
         {
             provide: HOOK_COMPONENTS,
             multi: true,
             useValue: {
-                id: 'acme.test.widget',
-                label: 'Test widget',
-                description: 'Displays some mirrored text',
-                component: WidgetDemo,
-                configComponent: WidgetConfigDemo,
+                id: 'device.health.widget',
+                label: 'Health widget',
+                description: 'Widget for device health microservice',
+                component: WidgetHealth,
+                configComponent: WidgetConfigHealth,
                 previewImage: require("~styles/previewImage.png"),
                 // data: {
                 //     settings: {
@@ -36,4 +36,4 @@ import '~styles/index.css';
         }
     ],
 })
-export class DemoWidgetModule {}
+export class HealthWidgetModule {}
